@@ -10,3 +10,12 @@ spring:
         git:
           uri: https://github.com/vsouzx/vtswebapi_configserver_repository
           default-label: main
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.host}:${eureka.port}/${eureka.name}/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
