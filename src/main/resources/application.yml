@@ -9,3 +9,4 @@ spring:
       server:
         git:
           uri: https://github.com/vsouzx/vtswebapi_configserver_repository
+          default-label: main
